@@ -1,0 +1,70 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemyFlying : MonoBehaviour
+{
+
+	private PlayerController thePlayer;
+
+	public float moveSpeed;
+
+	public float playerRange;
+
+	public LayerMask playerLayer;
+
+	public bool playerInRange;
+	public bool facingAway;
+
+	public bool followOnLookAway;
+
+	//public GameObject effect;
+
+
+	// Start is called before the first frame update
+	void Start()
+	{
+		thePlayer = FindObjectOfType<PlayerController>();
+	}
+
+	// Update is called once per frame
+	void Update()
+	{
+
+		playerInRange = Physics2D.OverlapCircle(transform.position, playerRange, playerLayer);
+
+		if (!followOnLookAway)
+		{
+			if (playerInRange)
+			{
+				transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, moveSpeed * Time.deltaTime);
+				return;
+			}
+
+		}
+
+		if ((thePlayer.transform.position.x < transform.position.x && thePlayer.transform.localScale.x < 0) || (thePlayer.transform.position.x > transform.position.x && thePlayer.transform.localScale.x > 0))
+		{
+			facingAway = true;
+		}
+
+		else
+		{
+			//effect.gameObject.SetActive(false);
+			facingAway = false;
+		}
+
+		if (playerInRange && facingAway)
+		{
+			transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, moveSpeed * Time.deltaTime);
+			//effect.gameObject.SetActive(true);
+		}
+	}
+
+	void OnDrawGizmosSelected()
+	{
+		Gizmos.DrawSphere(transform.position, playerRange);
+	}
+
+
+}
