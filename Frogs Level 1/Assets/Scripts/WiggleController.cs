@@ -8,7 +8,7 @@ public Transform leftPoint;
 
 public Transform rightPoint;
 public float moveSpeed;
-private Rigidbody2D myRigidbody;
+public Rigidbody2D myRigidbody;
 public bool movingRight;
 
     // Start is called before the first frame update
