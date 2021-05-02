@@ -210,14 +210,14 @@ public class PlayerController : MonoBehaviour
 		{
 			checkFrogs.frog_2 = true;
 			Cursor.visible = true;
-			SceneManager.LoadScene("Scenes/Menu");
+			SceneManager.LoadScene("Menu");            
 		}
 
 		if (other.tag == "Unlock_3")
 		{
 			checkFrogs.frog_3 = true;
 			Cursor.visible = true;
-			SceneManager.LoadScene("Scenes/Menu");
+			SceneManager.LoadScene("Menu");            
 		}
 	}
 	void OnCollisionEnter2D(Collision2D other)
