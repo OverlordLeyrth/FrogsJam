@@ -38,33 +38,6 @@ TextureImporter:
   - first:
       213: -7496863132204074950
     second: FrogSprites_11
-  - first:
-      213: -109281179803396870
-    second: FrogSprites_12
-  - first:
-      213: 3805932879976492318
-    second: FrogSprites_13
-  - first:
-      213: -3479799013871387152
-    second: FrogSprites_14
-  - first:
-      213: 1027249476716072424
-    second: FrogSprites_15
-  - first:
-      213: -723215065093636296
-    second: FrogSprites_16
-  - first:
-      213: -6556317920717943502
-    second: FrogSprites_17
-  - first:
-      213: -1184359502067410063
-    second: FrogSprites_18
-  - first:
-      213: 5839713525479558815
-    second: FrogSprites_19
-  - first:
-      213: -5877784556599089926
-    second: FrogSprites_20
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -169,10 +142,10 @@ TextureImporter:
       name: FrogSprites_0
       rect:
         serializedVersion: 2
-        x: 136
-        y: 1501
-        width: 231
-        height: 308
+        x: 137
+        y: 1503
+        width: 230
+        height: 305
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +163,10 @@ TextureImporter:
       name: FrogSprites_1
       rect:
         serializedVersion: 2
-        x: 743
-        y: 1578
-        width: 250
-        height: 310
+        x: 744
+        y: 1580
+        width: 248
+        height: 306
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,10 +184,10 @@ TextureImporter:
       name: FrogSprites_2
       rect:
         serializedVersion: 2
-        x: 1193
-        y: 1576
-        width: 301
-        height: 217
+        x: 1195
+        y: 1578
+        width: 297
+        height: 213
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,10 +205,10 @@ TextureImporter:
       name: FrogSprites_3
       rect:
         serializedVersion: 2
-        x: 1685
-        y: 1574
-        width: 315
-        height: 219
+        x: 1688
+        y: 1576
+        width: 310
+        height: 215
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,10 +226,10 @@ TextureImporter:
       name: FrogSprites_4
       rect:
         serializedVersion: 2
-        x: 2129
-        y: 1523
-        width: 242
-        height: 323
+        x: 137
+        y: 1003
+        width: 230
+        height: 364
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,10 +247,10 @@ TextureImporter:
       name: FrogSprites_5
       rect:
         serializedVersion: 2
-        x: 2639
-        y: 1523
-        width: 224
-        height: 323
+        x: 726
+        y: 1080
+        width: 266
+        height: 382
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,10 +268,10 @@ TextureImporter:
       name: FrogSprites_6
       rect:
         serializedVersion: 2
-        x: 3129
-        y: 1569
-        width: 264
-        height: 326
+        x: 1195
+        y: 1078
+        width: 297
+        height: 293
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,10 +289,10 @@ TextureImporter:
       name: FrogSprites_7
       rect:
         serializedVersion: 2
-        x: 3652
-        y: 1580
-        width: 327
-        height: 286
+        x: 1688
+        y: 1076
+        width: 310
+        height: 295
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,10 +310,10 @@ TextureImporter:
       name: FrogSprites_8
       rect:
         serializedVersion: 2
-        x: 4058
-        y: 1604
-        width: 380
-        height: 304
+        x: 85
+        y: 503
+        width: 327
+        height: 305
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,10 +331,10 @@ TextureImporter:
       name: FrogSprites_9
       rect:
         serializedVersion: 2
-        x: 136
-        y: 1002
-        width: 231
-        height: 367
+        x: 722
+        y: 580
+        width: 270
+        height: 314
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -379,10 +352,10 @@ TextureImporter:
       name: FrogSprites_10
       rect:
         serializedVersion: 2
-        x: 725
-        y: 1079
-        width: 268
-        height: 385
+        x: 1195
+        y: 578
+        width: 297
+        height: 252
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,10 +373,10 @@ TextureImporter:
       name: FrogSprites_11
       rect:
         serializedVersion: 2
-        x: 1193
-        y: 1077
-        width: 301
-        height: 294
+        x: 1688
+        y: 576
+        width: 310
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,195 +386,6 @@ TextureImporter:
       bones: []
       spriteID: a38f04b83bac5f790800000000000000
       internalID: -7496863132204074950
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FrogSprites_12
-      rect:
-        serializedVersion: 2
-        x: 1685
-        y: 1075
-        width: 315
-        height: 296
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af4de219851cb7ef0800000000000000
-      internalID: -109281179803396870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FrogSprites_13
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 501
-        width: 330
-        height: 308
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1d6af52ac361d430800000000000000
-      internalID: 3805932879976492318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FrogSprites_14
-      rect:
-        serializedVersion: 2
-        x: 721
-        y: 578
-        width: 272
-        height: 319
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fdf070db3545bfc0800000000000000
-      internalID: -3479799013871387152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FrogSprites_15
-      rect:
-        serializedVersion: 2
-        x: 1193
-        y: 576
-        width: 301
-        height: 255
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8ed0e5bd4f5814e00800000000000000
-      internalID: 1027249476716072424
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FrogSprites_16
-      rect:
-        serializedVersion: 2
-        x: 1685
-        y: 574
-        width: 315
-        height: 277
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83ff1e4eabf96f5f0800000000000000
-      internalID: -723215065093636296
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FrogSprites_17
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 2
-        width: 231
-        height: 312
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23d441586974305a0800000000000000
-      internalID: -6556317920717943502
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FrogSprites_18
-      rect:
-        serializedVersion: 2
-        x: 743
-        y: 77
-        width: 250
-        height: 341
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17bd9e0de4f409fe0800000000000000
-      internalID: -1184359502067410063
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FrogSprites_19
-      rect:
-        serializedVersion: 2
-        x: 1193
-        y: 77
-        width: 301
-        height: 242
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9ec044e284da0150800000000000000
-      internalID: 5839713525479558815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FrogSprites_20
-      rect:
-        serializedVersion: 2
-        x: 1685
-        y: 75
-        width: 315
-        height: 244
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af462ad661aed6ea0800000000000000
-      internalID: -5877784556599089926
       vertices: []
       indices: 
       edges: []
