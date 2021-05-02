@@ -46,9 +46,9 @@ public class Swim : MonoBehaviour
 		inWater = false;
 	}
 
-	public void Update()
+	void Update()
 	{
-		myAnim.SetBool("Water", inWater);
+
 		// Gives a value between -1 and 1
 		horizontal_ = Input.GetAxisRaw("Horizontal"); // -1 is left
 		vertical_ = Input.GetAxisRaw("Vertical"); // -1 is down
@@ -61,7 +61,7 @@ public class Swim : MonoBehaviour
 		{
 			idleFloating_ = Mathf.Lerp(idleFloating_, 1, idleAnimLer);
 		}
-
+		myAnim.SetBool("Water", inWater);
 		if (Input.GetButtonDown("Dash"))
 		{
 			//	myAnim.SetBool("dashing", canDash_);
@@ -156,7 +156,7 @@ public class Swim : MonoBehaviour
 		if (other.tag == "Water")
 		{
 			//FindObjectOfType<AudioManager>().Play("ShadowState");
-			//myAnim.SetBool("Water", true);
+			myAnim.SetBool("Water", true);
 			inWater = true;
 		}
 	}
@@ -175,7 +175,7 @@ public class Swim : MonoBehaviour
 	{
 		if (other.tag == "Water")
 		{
-			//myAnim.SetBool("Water", false);
+			myAnim.SetBool("Water", false);
 			//FindObjectOfType<AudioManager>().Stop("ShadowState");
 			rb_.gravityScale = normalGravity;
 			this.gameObject.GetComponent<PlayerController>().enabled = true;

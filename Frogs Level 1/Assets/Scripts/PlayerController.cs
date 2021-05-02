@@ -152,7 +152,7 @@ public class PlayerController : MonoBehaviour
 
 
 			myAnim.SetFloat("Speed", Mathf.Abs(myRigidbody.velocity.x));
-			//myAnim.SetBool("Grounded", isGrounded);
+			myAnim.SetBool("Grounded", isGrounded);
 			//myAnim.SetBool("IsJumping", isGrabbing);
 		}
 
