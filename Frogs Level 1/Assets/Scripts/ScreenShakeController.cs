@@ -21,10 +21,10 @@ public float rotationMultiplier = 5f;
     void Update()
     {
         
-    if(Input.GetKeyDown(KeyCode.K))
-    {
-        StartShake(.5f, 1f);
-    }
+    //if(Input.GetKeyDown(KeyCode.K))
+    //{
+    //    StartShake(.5f, 1f);
+    //}
     }
     private void LateUpdate()
     {

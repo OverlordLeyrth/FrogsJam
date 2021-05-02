@@ -12,7 +12,7 @@ GameObject:
   m_Layer: 0
   m_Name: End (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -106,7 +106,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 3781872651152224611, guid: 55c4da8d9579c1f44862d323a7199b0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftPoint: {fileID: 2765861444393210089}
   rightPoint: {fileID: 2765861443467810213}
-  moveSpeed: 5
+  moveSpeed: 2
   movingRight: 0
 --- !u!61 &2765861444120802833
 BoxCollider2D:
@@ -251,7 +251,7 @@ GameObject:
   m_Layer: 0
   m_Name: Start (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
