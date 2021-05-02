@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Frog_3_Level.unity
     guid: 4bac0f297f843024d9bc4145cbbb5fdd
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 484dc627e64727a43a1a04670be2f46d
   m_configObjects: {}

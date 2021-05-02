@@ -23,8 +23,10 @@ public class LifePickUp : MonoBehaviour
 	{
 		if (other.tag == "Player")
 		{
+			FindObjectOfType<AudioManager>().Play("BugCrunch");
 			theLevelManager.GiveHealth(healthToGive);
 			Destroy(gameObject);
+
 		}
 	}
 }

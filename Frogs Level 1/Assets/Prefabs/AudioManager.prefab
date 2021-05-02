@@ -52,7 +52,49 @@ MonoBehaviour:
     loop: 0
   - name: Menu
     clip: {fileID: 8300000, guid: 1ccf65e38a5d7914fa603355f0a1dfac, type: 3}
-    volumne: 0.5
+    volumne: 0.65
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: Swim
+    clip: {fileID: 8300000, guid: bc52cb6250e131343b3ea2f8ca05fe5c, type: 3}
+    volumne: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Hurt
+    clip: {fileID: 8300000, guid: f72659842012357489002a2eaaffe46f, type: 3}
+    volumne: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: BugCrunch
+    clip: {fileID: 8300000, guid: 4a3af6fb81aaa2b4a9a07c565193d623, type: 3}
+    volumne: 0.43
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Frog_1_Level
+    clip: {fileID: 8300000, guid: a3d3eda4a2a3f534ba076cc966d99fc5, type: 3}
+    volumne: 0.35
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: Frog_2_Level
+    clip: {fileID: 8300000, guid: a3d3eda4a2a3f534ba076cc966d99fc5, type: 3}
+    volumne: 0.35
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: Frog_3_Level
+    clip: {fileID: 8300000, guid: a3d3eda4a2a3f534ba076cc966d99fc5, type: 3}
+    volumne: 0.35
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: Credits
+    clip: {fileID: 8300000, guid: 1ccf65e38a5d7914fa603355f0a1dfac, type: 3}
+    volumne: 0.65
     pitch: 1
     source: {fileID: 0}
     loop: 1

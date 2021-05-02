@@ -25,6 +25,7 @@ public class HurtPlayer : MonoBehaviour
 			// theLevelManager.Respawn();
 			ScreenShakeController.instance.StartShake(0.1f, 0.1f);
 			theLevelManager.HurtPlayer(damageToGive);
+			FindObjectOfType<AudioManager>().Play("Hurt");
 			//Instantiate(impactHurt, other.transform.position, other.transform.rotation);
 		}
 	}

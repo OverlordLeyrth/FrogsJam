@@ -181,7 +181,7 @@ public class PlayerController : MonoBehaviour
 	{
 		if (other.tag == "KillZone")
 		{
-
+			FindObjectOfType<AudioManager>().Play("Hurt");
 			theLevelManager.Respawn();
 		}
 		if (other.tag == "Checkpoint")
@@ -201,6 +201,13 @@ public class PlayerController : MonoBehaviour
 			checkFrogs.frog_3 = true;
 			Cursor.visible = true;
 			SceneManager.LoadScene("Menu");
+		}
+
+		if (other.tag == "Win")
+		{
+			checkFrogs.frog_3 = true;
+			Cursor.visible = true;
+			SceneManager.LoadScene("Credits");
 		}
 	}
 	void OnCollisionEnter2D(Collision2D other)

@@ -66,18 +66,20 @@ public class Swim : MonoBehaviour
 
 	void Update()
 	{
-
+		FindObjectOfType<AudioManager>().Play("Swim");
 		// Gives a value between -1 and 1
 		horizontal_ = Input.GetAxisRaw("Horizontal"); // -1 is left
 		vertical_ = Input.GetAxisRaw("Vertical"); // -1 is down
+		FindObjectOfType<AudioManager>().Play("Swim");
 		if (idleFlSwitch_)
 		{
 			idleFloating_ = Mathf.Lerp(idleFloating_, -1, idleAnimLer);
-
+			FindObjectOfType<AudioManager>().Play("Swim");
 		}
 		else
 		{
 			idleFloating_ = Mathf.Lerp(idleFloating_, 1, idleAnimLer);
+			FindObjectOfType<AudioManager>().Play("Swim");
 		}
 		myAnim.SetBool("Water", inWater);
 		if (Input.GetButtonDown("Dash"))
@@ -141,6 +143,7 @@ public class Swim : MonoBehaviour
 		{
 
 			theLevelManager.Respawn();
+			FindObjectOfType<AudioManager>().Play("Hurt");
 		}
 		if (other.tag == "Checkpoint")
 		{
