@@ -41238,11 +41238,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 957573486942549441, guid: 35707ddd567268f4db00ea72ed6f7a77, type: 3}
       propertyPath: m_Mass
-      value: 4
+      value: 3.8
       objectReference: {fileID: 0}
     - target: {fileID: 957573486942549441, guid: 35707ddd567268f4db00ea72ed6f7a77, type: 3}
       propertyPath: m_GravityScale
-      value: 1.7
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 957573486942549442, guid: 35707ddd567268f4db00ea72ed6f7a77, type: 3}
       propertyPath: m_RootOrder
@@ -41298,7 +41298,7 @@ PrefabInstance:
       objectReference: {fileID: 519420032}
     - target: {fileID: 957573486942549446, guid: 35707ddd567268f4db00ea72ed6f7a77, type: 3}
       propertyPath: jumpSpeed
-      value: 12.8
+      value: 13.5
       objectReference: {fileID: 0}
     - target: {fileID: 957573486942549446, guid: 35707ddd567268f4db00ea72ed6f7a77, type: 3}
       propertyPath: checkFrogs
