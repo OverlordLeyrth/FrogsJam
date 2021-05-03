@@ -38,7 +38,7 @@ public class StompEnemy : MonoBehaviour
 			other.gameObject.SetActive(false);
 			Instantiate(impactStomp, other.transform.position, other.transform.rotation);
 			playerRigidbody.velocity = new Vector3(playerRigidbody.velocity.x, bounceForce, 0f);
-			//stompSound.Play();
+			FindObjectOfType<AudioManager>().Play("Hit");
 			// enemyHealth = 0;
 		}
 

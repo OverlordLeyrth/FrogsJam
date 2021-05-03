@@ -98,3 +98,15 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 1
+  - name: Hit
+    clip: {fileID: 8300000, guid: 92217b8cf5de1a0469d2beb0e8fc56d3, type: 3}
+    volumne: 0.45
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Checkpoint
+    clip: {fileID: 8300000, guid: 0ad9b7c1bc0d6274bae176e6f84fbbfe, type: 3}
+    volumne: 0.5
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0

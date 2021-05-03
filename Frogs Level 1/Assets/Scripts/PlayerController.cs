@@ -187,6 +187,7 @@ public class PlayerController : MonoBehaviour
 		if (other.tag == "Checkpoint")
 		{
 			respawnPosition = other.transform.position;
+			FindObjectOfType<AudioManager>().Play("Checkpoint");
 		}
 
 		if (other.tag == "Unlock_2")

@@ -180,15 +180,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Bla bla
+  m_text: 'Lehan Botha & Tudor Drobota
 
 
 
-    Lily
+    Desichan
 
 
 
-    Lehan Botha  & Tudor Drobota
+    Lehan Botha  & Tudor
+    Drobota
 
 
 
@@ -196,11 +197,7 @@ MonoBehaviour:
 
 
 
-    Muda
-
-
-
-    God
+    Muda & Light
 
 '
   m_isRightToLeft: 0
@@ -1758,6 +1755,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3432739764609692754, guid: 07f787c3076e94d489a4c200ecddcce9, type: 3}
+      propertyPath: sounds.Array.data[9].volumne
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432739764609692754, guid: 07f787c3076e94d489a4c200ecddcce9, type: 3}
+      propertyPath: sounds.Array.data[10].volumne
+      value: 0.42
+      objectReference: {fileID: 0}
     - target: {fileID: 3432739764609692755, guid: 07f787c3076e94d489a4c200ecddcce9, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -2512,7 +2517,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Project Manager:
+  m_text: 'Game Designers:
 
 
 
@@ -2529,13 +2534,7 @@ MonoBehaviour:
 
 
     Audio
-    Designer:
-
-
-
-    Special Thanks:
-
-'
+    Designer:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c0f90ea85562445b29298db53f202d, type: 2}
   m_sharedMaterial: {fileID: -4675258731579643666, guid: 50c0f90ea85562445b29298db53f202d, type: 2}
