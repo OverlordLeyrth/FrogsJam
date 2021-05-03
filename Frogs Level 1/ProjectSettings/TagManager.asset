@@ -10,6 +10,7 @@ TagManager:
   - Unlock_2
   - Water
   - Unlock_3
+  - Win
   layers:
   - Default
   - TransparentFX

@@ -64,7 +64,7 @@ public class LevelManager : MonoBehaviour
 
 		//FadeIn();
 		thePlayer.KnockBack();
-		//thePlayer.theSR.color = new Color(1f, 1f, 1f, 0.65f);
+		thePlayer.theSR.color = new Color(1f, 1f, 1f, 0.65f);
 	}
 
 

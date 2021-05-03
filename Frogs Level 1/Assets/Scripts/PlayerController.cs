@@ -37,10 +37,6 @@ public class PlayerController : MonoBehaviour
 
 	public SpriteRenderer theSR;
 
-	private bool onPlatform;
-	public float onPlatformSpeedModifier;
-
-
 	public static PlayerController instance;
 
 	public bool canMove = true;
@@ -73,88 +69,77 @@ public class PlayerController : MonoBehaviour
 	{
 		isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
-		if (knockbackCounter <= 0)
+		if (!canMove)
+		{
+			myAnim.SetFloat("Speed", Mathf.Abs(0));
+			myRigidbody.velocity = Vector2.zero;
+			return;
+
+		}
+
+
+		if (canMove)
 		{
 
-			if (onPlatform)
+			if (Input.GetButtonDown("Jump") && isGrounded)
 			{
-				activeMoveSpeed = moveSpeed * onPlatformSpeedModifier;
+				myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, jumpSpeed, 0f);
+			}
+			if (Input.GetButtonUp("Jump") && myRigidbody.velocity.y > 0)
+			{
+				myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, myRigidbody.velocity.y * .5f);
 
+			}
+
+			if (isGrounded)
+			{
+				hangCounter = hangTime;
 			}
 			else
 			{
-				activeMoveSpeed = moveSpeed;
+				hangCounter -= Time.deltaTime;
 			}
-			if (!canMove)
+
+			if (Input.GetButtonDown("Jump"))
 			{
-				myAnim.SetFloat("Speed", Mathf.Abs(0));
-				myRigidbody.velocity = Vector2.zero;
-				return;
-
+				jumpBufferCount = jumpBufferLength;
+				FindObjectOfType<AudioManager>().Play("Jump");
 			}
 
-
-			if (canMove)
+			else
 			{
+				jumpBufferCount -= Time.deltaTime;
+			}
+			if (jumpBufferCount >= 0 && hangCounter > 0f)
 
-				if (Input.GetButtonDown("Jump") && isGrounded)
-				{
-					myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, jumpSpeed, 0f);
-				}
-				if (Input.GetButtonUp("Jump") && myRigidbody.velocity.y > 0)
-				{
-					myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, myRigidbody.velocity.y * .5f);
+			{
+				myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, jumpSpeed);
+				jumpBufferCount = 0;
+			}
 
-				}
-
-				if (isGrounded)
-				{
-					hangCounter = hangTime;
-				}
-				else
-				{
-					hangCounter -= Time.deltaTime;
-				}
-
-				if (Input.GetButtonDown("Jump"))
-				{
-					jumpBufferCount = jumpBufferLength;
-				}
-
-				else
-				{
-					jumpBufferCount -= Time.deltaTime;
-				}
-				if (jumpBufferCount >= 0 && hangCounter > 0f)
-
-				{
-					myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, jumpSpeed);
-					jumpBufferCount = 0;
-				}
-
-				if (Input.GetAxisRaw("Horizontal") > 0f)
-				{
-					myRigidbody.velocity = new Vector3(activeMoveSpeed, myRigidbody.velocity.y, 0f);
-					transform.eulerAngles = new Vector3(0, 0, 0);
-				}
-				else if (Input.GetAxisRaw("Horizontal") < 0f)
-				{
-					myRigidbody.velocity = new Vector3(-activeMoveSpeed, myRigidbody.velocity.y, 0f);
-					transform.eulerAngles = new Vector3(0, 180, 0);
-				}
-				else
-				{
-					myRigidbody.velocity = new Vector3(0f, myRigidbody.velocity.y, 0f);
-				}
-
-
+			if (Input.GetAxisRaw("Horizontal") > 0f)
+			{
+				myRigidbody.velocity = new Vector3(activeMoveSpeed, myRigidbody.velocity.y, 0f);
+				transform.eulerAngles = new Vector3(0, 0, 0);
+			}
+			else if (Input.GetAxisRaw("Horizontal") < 0f)
+			{
+				myRigidbody.velocity = new Vector3(-activeMoveSpeed, myRigidbody.velocity.y, 0f);
+				transform.eulerAngles = new Vector3(0, 180, 0);
+			}
+			else
+			{
+				myRigidbody.velocity = new Vector3(0f, myRigidbody.velocity.y, 0f);
 			}
 
 
-			myAnim.SetFloat("Speed", Mathf.Abs(myRigidbody.velocity.x));
-			myAnim.SetBool("Grounded", isGrounded);
-			//myAnim.SetBool("IsJumping", isGrabbing);
 		}
+
+
+		myAnim.SetFloat("Speed", Mathf.Abs(myRigidbody.velocity.x));
+		myAnim.SetBool("Grounded", isGrounded);
+		//myAnim.SetBool("IsJumping", isGrabbing);
+
 
 
 		if (knockbackCounter > 0)
@@ -169,14 +154,14 @@ public class PlayerController : MonoBehaviour
 				myRigidbody.velocity = new Vector3(knockbackForce, knockbackForce, 1f);
 			}
 
+
 		}
 
 		if (invincibilityCounter > 0)
 		{
 			invincibilityCounter -= Time.deltaTime;
-			theSR.color = new Color(1f, 1f, 1f, 0.65f);
-		}
 
+		}
 		if (invincibilityCounter <= 0)
 		{
 			theLevelManager.invincible = false;
@@ -184,6 +169,7 @@ public class PlayerController : MonoBehaviour
 			theSR.color = new Color(1f, 1f, 1f, 1f);
 		}
 	}
+
 	public void KnockBack()
 	{
 		knockbackCounter = knockbackLength;
@@ -195,38 +181,37 @@ public class PlayerController : MonoBehaviour
 	{
 		if (other.tag == "KillZone")
 		{
-			// gameObject.SetActive(falseu);
-			//transform.position = respawnPosition;
+			FindObjectOfType<AudioManager>().Play("Hurt");
 			theLevelManager.Respawn();
 		}
 		if (other.tag == "Checkpoint")
 		{
 			respawnPosition = other.transform.position;
-			// PlayerPrefs.SetInt("CoinCount", theLevelManager.coinCount);
-			// PlayerPrefs.SetInt("HealthCount", theLevelManager.healthCount);
 		}
 
 		if (other.tag == "Unlock_2")
 		{
 			checkFrogs.frog_2 = true;
 			Cursor.visible = true;
-			SceneManager.LoadScene("Menu");            
+			SceneManager.LoadScene("Menu");
 		}
 
 		if (other.tag == "Unlock_3")
 		{
 			checkFrogs.frog_3 = true;
 			Cursor.visible = true;
-			SceneManager.LoadScene("Menu");            
+			SceneManager.LoadScene("Menu");
+		}
+
+		if (other.tag == "Win")
+		{
+			checkFrogs.frog_3 = true;
+			Cursor.visible = true;
+			SceneManager.LoadScene("Credits");
 		}
 	}
 	void OnCollisionEnter2D(Collision2D other)
 	{
-		if (other.gameObject.tag == "MovingPlatform")
-		{
-			transform.parent = other.transform;
-			onPlatform = true;
-		}
 
 		if (other.gameObject.tag == "Water")
 		{
@@ -234,17 +219,6 @@ public class PlayerController : MonoBehaviour
 			this.gameObject.GetComponent<Swim>().enabled = true;
 		}
 	}
-
-	void OnCollisionExit2D(Collision2D other)
-	{
-		if (other.gameObject.tag == "MovingPlatform")
-		{
-			transform.parent = null;
-			//DontDestroyOnLoad(this);  
-			onPlatform = false;
-		}
-	}
-
 
 	public void OnTriggerStay2D(Collider2D other)
 	{

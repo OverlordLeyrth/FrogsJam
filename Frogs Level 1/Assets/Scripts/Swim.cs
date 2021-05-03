@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Swim : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Swim : MonoBehaviour
 	private float horizontal_;
 	private float vertical_;
 	private const float MoveLimiter = 0.7f;
+	public Rigidbody2D myRigidbody;
 
 	public float runSpeed = 20.0f;
 	public float floatLerp;
@@ -34,6 +36,19 @@ public class Swim : MonoBehaviour
 
 	public bool inWater;
 
+	public float knockbackForce;
+	public float knockbackLength;
+	private float knockbackCounter;
+
+	public float invincibilityLength;
+
+	public float invincibilityCounter;
+
+	public SpriteRenderer theSR;
+	public LevelManager theLevelManager;
+	public Vector3 respawnPosition;
+	public CheckFrogs checkFrogs;
+
 	private void Awake()
 	{
 		rb_ = GetComponent<Rigidbody2D>();
@@ -43,23 +58,28 @@ public class Swim : MonoBehaviour
 
 	void Start()
 	{
+		myRigidbody = GetComponent<Rigidbody2D>();
 		inWater = false;
+		theLevelManager = FindObjectOfType<LevelManager>();
+		checkFrogs = FindObjectOfType<CheckFrogs>();
 	}
 
 	void Update()
 	{
-
+		FindObjectOfType<AudioManager>().Play("Swim");
 		// Gives a value between -1 and 1
 		horizontal_ = Input.GetAxisRaw("Horizontal"); // -1 is left
 		vertical_ = Input.GetAxisRaw("Vertical"); // -1 is down
+		FindObjectOfType<AudioManager>().Play("Swim");
 		if (idleFlSwitch_)
 		{
 			idleFloating_ = Mathf.Lerp(idleFloating_, -1, idleAnimLer);
-
+			FindObjectOfType<AudioManager>().Play("Swim");
 		}
 		else
 		{
 			idleFloating_ = Mathf.Lerp(idleFloating_, 1, idleAnimLer);
+			FindObjectOfType<AudioManager>().Play("Swim");
 		}
 		myAnim.SetBool("Water", inWater);
 		if (Input.GetButtonDown("Dash"))
@@ -79,6 +99,69 @@ public class Swim : MonoBehaviour
 			if ((horizontal_ != 0 || vertical_ != 0) && canDash_)
 			{
 			}
+		}
+
+
+		if (knockbackCounter > 0)
+		{
+			knockbackCounter -= Time.deltaTime;
+			if (transform.localScale.x > 0)
+			{
+				myRigidbody.velocity = new Vector3(-knockbackForce, knockbackForce, 0f);
+			}
+			else
+			{
+				myRigidbody.velocity = new Vector3(knockbackForce, knockbackForce, 1f);
+			}
+
+
+		}
+
+		if (invincibilityCounter > 0)
+		{
+			invincibilityCounter -= Time.deltaTime;
+
+		}
+		if (invincibilityCounter <= 0)
+		{
+			theLevelManager.invincible = false;
+			//theLevelManager.FadeOut();
+			theSR.color = new Color(1f, 1f, 1f, 1f);
+		}
+	}
+
+	public void KnockBack()
+	{
+		knockbackCounter = knockbackLength;
+		invincibilityCounter = invincibilityLength;
+		theLevelManager.invincible = true;
+	}
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.tag == "KillZone")
+		{
+
+			theLevelManager.Respawn();
+			FindObjectOfType<AudioManager>().Play("Hurt");
+		}
+		if (other.tag == "Checkpoint")
+		{
+			respawnPosition = other.transform.position;
+		}
+
+        if (other.tag == "Unlock_2")
+        {
+            checkFrogs.frog_2 = true;
+            Cursor.visible = true;
+            SceneManager.LoadScene("Menu");
+        }
+
+        if (other.tag == "Unlock_3")
+		{
+			checkFrogs.frog_3 = true;
+			Cursor.visible = true;
+			SceneManager.LoadScene("Menu");
 		}
 
 	}
@@ -149,17 +232,6 @@ public class Swim : MonoBehaviour
 		return vertical_ == 0 && horizontal_ == 0;
 	}
 
-
-
-	private void OnTriggerEnter2D(Collider2D other)
-	{
-		if (other.tag == "Water")
-		{
-			//FindObjectOfType<AudioManager>().Play("ShadowState");
-			myAnim.SetBool("Water", true);
-			inWater = true;
-		}
-	}
 	private void OnTriggerStay2D(Collider2D other)
 	{
 		if (other.tag == "Water")
@@ -177,7 +249,7 @@ public class Swim : MonoBehaviour
 		{
 			myAnim.SetBool("Water", false);
 			//FindObjectOfType<AudioManager>().Stop("ShadowState");
-			rb_.gravityScale = normalGravity;
+			rb_.gravityScale = 2f;
 			this.gameObject.GetComponent<PlayerController>().enabled = true;
 			this.gameObject.GetComponent<Swim>().enabled = false;
 			inWater = false;

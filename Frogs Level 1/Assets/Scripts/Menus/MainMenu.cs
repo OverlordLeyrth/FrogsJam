@@ -50,31 +50,19 @@ public class MainMenu : MonoBehaviour
 	private IEnumerator StartGame()
 	{
 		yield return new WaitForSeconds(0.5f);
-		SceneManager.LoadScene("Scenes/Level");
+		SceneManager.LoadScene("Scenes/Frog_1_Level");
 	}
 
 	private IEnumerator StartGame_2()
 	{
 		yield return new WaitForSeconds(0.5f);
-		SceneManager.LoadScene("Scenes/Level_2");
+		SceneManager.LoadScene("Scenes/Frog_2_Level");
 	}
 
 	private IEnumerator StartGame_3()
 	{
 		yield return new WaitForSeconds(0.5f);
-		SceneManager.LoadScene("Scenes/Level_3");
-	}
-
-	private IEnumerator Credits()
-	{
-		yield return new WaitForSeconds(0.5f);
-		SceneManager.LoadScene("Scenes/WonScene");
-	}
-
-	public void viewCredits()
-	{
-		StartCoroutine(Credits());
-		print("view credits");
+		SceneManager.LoadScene("Scenes/Frog_3_Level");
 	}
 
 	public void QuitGame()
