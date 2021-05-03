@@ -23,9 +23,10 @@ public class HurtPlayer : MonoBehaviour
 		if (other.tag == "Player" && theLevelManager.invincible != true)
 		{
 			// theLevelManager.Respawn();
-			ScreenShakeController.instance.StartShake(0.1f, 0.1f);
+			ScreenShakeController.instance.StartShake(.25f, .07f);
 			theLevelManager.HurtPlayer(damageToGive);
 			FindObjectOfType<AudioManager>().Play("Hurt");
+
 			//Instantiate(impactHurt, other.transform.position, other.transform.rotation);
 		}
 	}

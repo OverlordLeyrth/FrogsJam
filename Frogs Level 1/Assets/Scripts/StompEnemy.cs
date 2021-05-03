@@ -34,7 +34,7 @@ public class StompEnemy : MonoBehaviour
 	{
 		if (other.tag == "Enemy")
 		{
-			ScreenShakeController.instance.StartShake(.1f, .05f);
+			ScreenShakeController.instance.StartShake(.25f, .07f);
 			other.gameObject.SetActive(false);
 			Instantiate(impactStomp, other.transform.position, other.transform.rotation);
 			playerRigidbody.velocity = new Vector3(playerRigidbody.velocity.x, bounceForce, 0f);

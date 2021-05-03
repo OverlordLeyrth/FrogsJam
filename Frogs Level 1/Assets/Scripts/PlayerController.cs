@@ -182,6 +182,7 @@ public class PlayerController : MonoBehaviour
 		if (other.tag == "KillZone")
 		{
 			FindObjectOfType<AudioManager>().Play("Hurt");
+			ScreenShakeController.instance.StartShake(.25f, .07f);
 			theLevelManager.Respawn();
 		}
 		if (other.tag == "Checkpoint")
