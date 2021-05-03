@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 8379590556505837347
     second: BunnyFrogbutton_0
+  - first:
+      213: 6594897549333813630
+    second: BunnyFrogbutton_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -35,7 +38,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -71,7 +74,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -83,7 +86,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,19 +112,40 @@ TextureImporter:
       name: BunnyFrogbutton_0
       rect:
         serializedVersion: 2
-        x: 488
-        y: 0
-        width: 512
-        height: 500
+        x: 37
+        y: 42
+        width: 424
+        height: 424
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 10, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 32f8fb3d6394a4470800000000000000
       internalID: 8379590556505837347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BunnyFrogbutton_1
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 32
+        width: 444
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79d22e3168c58b50800000000000000
+      internalID: 6594897549333813630
       vertices: []
       indices: 
       edges: []

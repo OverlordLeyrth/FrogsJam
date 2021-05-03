@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 7991324305019090150
     second: Sludgefrog_0
+  - first:
+      213: -7887269236410790139
+    second: Sludgefrog_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -35,7 +38,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -71,7 +74,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -83,7 +86,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,12 +112,12 @@ TextureImporter:
       name: Sludgefrog_0
       rect:
         serializedVersion: 2
-        x: 488
-        y: 0
-        width: 512
-        height: 500
+        x: 37
+        y: 42
+        width: 424
+        height: 424
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -110,6 +125,27 @@ TextureImporter:
       bones: []
       spriteID: 6e4bb959d13e6ee60800000000000000
       internalID: 7991324305019090150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sludgefrog_1
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 32
+        width: 444
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f4ed30b6aca8290800000000000000
+      internalID: -7887269236410790139
       vertices: []
       indices: 
       edges: []
