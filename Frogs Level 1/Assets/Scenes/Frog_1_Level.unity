@@ -12484,7 +12484,7 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 15e0ea304621ca5429e654bba8330697, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 19.2, y: 10.8}
@@ -22576,7 +22576,7 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 15e0ea304621ca5429e654bba8330697, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 19.2, y: 10.8}
@@ -40387,7 +40387,7 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 15e0ea304621ca5429e654bba8330697, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 19.2, y: 10.8}
@@ -41238,11 +41238,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 957573486942549441, guid: 35707ddd567268f4db00ea72ed6f7a77, type: 3}
       propertyPath: m_Mass
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 957573486942549441, guid: 35707ddd567268f4db00ea72ed6f7a77, type: 3}
       propertyPath: m_GravityScale
-      value: 2
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 957573486942549442, guid: 35707ddd567268f4db00ea72ed6f7a77, type: 3}
       propertyPath: m_RootOrder
@@ -41298,7 +41298,7 @@ PrefabInstance:
       objectReference: {fileID: 519420032}
     - target: {fileID: 957573486942549446, guid: 35707ddd567268f4db00ea72ed6f7a77, type: 3}
       propertyPath: jumpSpeed
-      value: 12.5
+      value: 12.8
       objectReference: {fileID: 0}
     - target: {fileID: 957573486942549446, guid: 35707ddd567268f4db00ea72ed6f7a77, type: 3}
       propertyPath: checkFrogs

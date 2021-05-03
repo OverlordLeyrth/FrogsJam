@@ -27,6 +27,13 @@ public class MainMenu : MonoBehaviour
 			frog_3.SetActive(true);
 		}
 	}
+
+	public void MenuGame()
+	{
+		StartCoroutine(Menu());
+		print("start game");
+
+	}
 	public void NewGame()
 	{
 		StartCoroutine(StartGame());
@@ -34,12 +41,14 @@ public class MainMenu : MonoBehaviour
 
 	}
 
+
 	public void NewGame_2()
 	{
 		StartCoroutine(StartGame_2());
 		print("start game");
 
 	}
+
 	public void NewGame_3()
 	{
 		StartCoroutine(StartGame_3());
@@ -51,6 +60,12 @@ public class MainMenu : MonoBehaviour
 	{
 		yield return new WaitForSeconds(0.5f);
 		SceneManager.LoadScene("Scenes/Frog_1_Level");
+	}
+
+	private IEnumerator Menu()
+	{
+		yield return new WaitForSeconds(0.5f);
+		SceneManager.LoadScene("Scenes/Menu");
 	}
 
 	private IEnumerator StartGame_2()

@@ -561,7 +561,7 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 15e0ea304621ca5429e654bba8330697, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 19.2, y: 10.8}
@@ -8820,7 +8820,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873616828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 103.82, y: -0.46, z: 0}
+  m_LocalPosition: {x: 103.82, y: 0.95000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9217,7 +9217,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956090808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 106.32, y: -0.46000004, z: 0}
+  m_LocalPosition: {x: 106.32, y: 0.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17787,20 +17787,44 @@ PrefabInstance:
       value: Frog_3
       objectReference: {fileID: 0}
     - target: {fileID: 4487624423596200059, guid: 2256419bf2ba66e498b2dc54de8e5094, type: 3}
+      propertyPath: hangTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4487624423596200059, guid: 2256419bf2ba66e498b2dc54de8e5094, type: 3}
       propertyPath: jumpSpeed
-      value: 8
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4487624423596200059, guid: 2256419bf2ba66e498b2dc54de8e5094, type: 3}
+      propertyPath: knockbackForce
+      value: 7.8
       objectReference: {fileID: 0}
     - target: {fileID: 4487624423596200059, guid: 2256419bf2ba66e498b2dc54de8e5094, type: 3}
       propertyPath: theLevelManager
       value: 
       objectReference: {fileID: 562780066}
+    - target: {fileID: 4487624423596200059, guid: 2256419bf2ba66e498b2dc54de8e5094, type: 3}
+      propertyPath: jumpBufferLength
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4487624423596200061, guid: 2256419bf2ba66e498b2dc54de8e5094, type: 3}
+      propertyPath: m_Size.y
+      value: 0.67885137
+      objectReference: {fileID: 0}
+    - target: {fileID: 4487624423596200061, guid: 2256419bf2ba66e498b2dc54de8e5094, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4487624423596200061, guid: 2256419bf2ba66e498b2dc54de8e5094, type: 3}
+      propertyPath: m_Offset.y
+      value: -1.05771
+      objectReference: {fileID: 0}
     - target: {fileID: 4487624423596200063, guid: 2256419bf2ba66e498b2dc54de8e5094, type: 3}
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4487624423596200063, guid: 2256419bf2ba66e498b2dc54de8e5094, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.67
+      value: -6.166
       objectReference: {fileID: 0}
     - target: {fileID: 4487624423596200063, guid: 2256419bf2ba66e498b2dc54de8e5094, type: 3}
       propertyPath: m_LocalPosition.y
@@ -32946,7 +32970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7366647576691790322, guid: 114a2dfe07930b8488b51b60836f51d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.61
+      value: 12.86
       objectReference: {fileID: 0}
     - target: {fileID: 7366647576691790322, guid: 114a2dfe07930b8488b51b60836f51d6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33002,7 +33026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7366647576691790323, guid: 114a2dfe07930b8488b51b60836f51d6, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 114a2dfe07930b8488b51b60836f51d6, type: 3}
@@ -33084,7 +33108,7 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 15e0ea304621ca5429e654bba8330697, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 19.2, y: 10.8}
@@ -40551,7 +40575,7 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 15e0ea304621ca5429e654bba8330697, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 19.2, y: 10.8}
