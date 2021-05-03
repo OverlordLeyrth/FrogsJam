@@ -1513,3 +1513,45 @@ System memory in use after: 142.2 MB.
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3688.
 Total: 3.586300 ms (FindLiveObjects: 0.408900 ms CreateObjectMapping: 0.187100 ms MarkObjects: 2.835500 ms  DeleteObjects: 0.153600 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 640.176852 seconds.
+  path: Assets/Scenes/Frog_1_Level.unity
+  artifactKey: Guid(271c4a9a055dc2a4881d8bb657166dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Frog_1_Level.unity using Guid(271c4a9a055dc2a4881d8bb657166dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2eb3984d9d3b9db2892ba9e7a23d5df') in 0.029480 seconds
+  Import took 0.038647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.073217 seconds.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(f4aa63b2f15d09d4d82fde358db66aa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(f4aa63b2f15d09d4d82fde358db66aa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '295ddf2b3082e04afb3536fed5ba1260') in 0.003699 seconds
+  Import took 0.012044 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001367 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.315 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2894 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.1 MB.
+System memory in use after: 142.3 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3692.
+Total: 8.742300 ms (FindLiveObjects: 0.782400 ms CreateObjectMapping: 0.734500 ms MarkObjects: 7.043700 ms  DeleteObjects: 0.180000 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
