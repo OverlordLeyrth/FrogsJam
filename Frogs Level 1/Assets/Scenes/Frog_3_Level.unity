@@ -636,7 +636,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4407403932239378754, guid: f55b940083550434098252acd2fcabde, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4407403932239378754, guid: f55b940083550434098252acd2fcabde, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29778,7 +29778,6 @@ Transform:
   m_Children:
   - {fileID: 385783783}
   - {fileID: 606910023}
-  - {fileID: 2023935153}
   - {fileID: 296024366}
   - {fileID: 1655303930}
   m_Father: {fileID: 0}
@@ -33977,6 +33976,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1414576807}
     m_Modifications:
+    - target: {fileID: 4977542835274290729, guid: a9a4d311b94e9a74e97cb084cf9bde5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4977542835274290730, guid: a9a4d311b94e9a74e97cb084cf9bde5e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -39418,7 +39421,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4407403932239378754, guid: f55b940083550434098252acd2fcabde, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4407403932239378754, guid: f55b940083550434098252acd2fcabde, type: 3}
       propertyPath: m_LocalPosition.x
@@ -41167,81 +41170,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.962219, y: 2.3596802}
   m_EdgeRadius: 0
---- !u!1001 &2023935152
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1236793340}
-    m_Modifications:
-    - target: {fileID: 4407403932239378754, guid: f55b940083550434098252acd2fcabde, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407403932239378754, guid: f55b940083550434098252acd2fcabde, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -24.612259
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407403932239378754, guid: f55b940083550434098252acd2fcabde, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -20.367344
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407403932239378754, guid: f55b940083550434098252acd2fcabde, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 66.774086
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407403932239378754, guid: f55b940083550434098252acd2fcabde, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407403932239378754, guid: f55b940083550434098252acd2fcabde, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407403932239378754, guid: f55b940083550434098252acd2fcabde, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407403932239378754, guid: f55b940083550434098252acd2fcabde, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407403932239378754, guid: f55b940083550434098252acd2fcabde, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407403932239378754, guid: f55b940083550434098252acd2fcabde, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407403932239378754, guid: f55b940083550434098252acd2fcabde, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407403932239378755, guid: f55b940083550434098252acd2fcabde, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407403932239378756, guid: f55b940083550434098252acd2fcabde, type: 3}
-      propertyPath: m_Name
-      value: Heronflap (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407403932239378764, guid: f55b940083550434098252acd2fcabde, type: 3}
-      propertyPath: moveSpeed
-      value: 8.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407403932239378764, guid: f55b940083550434098252acd2fcabde, type: 3}
-      propertyPath: playerRange
-      value: 14
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4407403932239378765, guid: f55b940083550434098252acd2fcabde, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: f55b940083550434098252acd2fcabde, type: 3}
---- !u!4 &2023935153 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4407403932239378754, guid: f55b940083550434098252acd2fcabde, type: 3}
-  m_PrefabInstance: {fileID: 2023935152}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2038244533
 GameObject:
   m_ObjectHideFlags: 0
